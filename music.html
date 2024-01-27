@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <style>
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-container-header div {
+      float:left;
+      width:33%;
+      background: #1F2937;
+      border: transparent;
+      height: 100px;
+      flex: 1 1 0%;
+    }
+    .three {
+      float:left; 
+      width:33%;
+      size:18px;
+      color: gray;
+    
+    }
+
+    .flex-body-one {
+      float:left;
+      width:50%;
+      height:200px;
+      background:#1F2937;
+      color:#1F2937
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container-header">
+      <div class="one" style="size:24px;color: #F9FAF8; font-weight: bold;">
+        Khoi's music
+      </div>
+      <div class="two"></div>
+      <div class="three">
+        <div class="three.left">
+          <a href="https://www.youtube.com/playlist?list=PLDK4qCCOZ2BFojJuiGY6Gr3cQx7IsfN1C"> pop chill music</a>
+         
+        </div>
+        <div class="three.center">
+          <a href="https://www.youtube.com/playlist?list=PLDK4qCCOZ2BHBB2K6Pcj0_6lTuUJRAxBe">classical music</a>
+          
+        </div>
+        <div class="three.right">
+          <a href="https://www.youtube.com/playlist?list=PLDK4qCCOZ2BGQwfenuYe-V7XJrUBD5FHC">guitar</a>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="flex-body-one">
+      <div class="body-one-left">
+        <h1 style="size:48px;font-weight: extra-bold;color:#F9FAF8">
+        This website is music shit
+        </h1>
+        <p style="color:#F9FAF8">my music playlists all in this shit man</p>
+        <button onclick="show()">
+          sign in
+        </button>
+      <div id="myDIV">
+        <input type="text" id="myInput" onkeyup="input()" placeholder="username">
+        <button onclick="document.getElementById('myInput').value=''">
+          sign in
+        </button>
+      </div>
+  
+        <script>
+          let z = document.getElementById("myDIV")
+          z.style.display = "none"
+          function show() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display !== "none") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          function input() {
+            var input;
+            input = document.getElementById("myInput");
+          }
+          </script>
+      </div>
+      <div class="body-one-right" style="background:#1F2937">
+        <p>this is a place holder</p>
+        <img>
+      </div>
+
+    </div>
+  </body>
+</html>
