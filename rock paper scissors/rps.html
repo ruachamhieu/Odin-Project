@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .button{
+        color: white;
+        background: black;
+        width: 200px;
+        height: 200px;
+        border: brown;
+      }
+      .header{
+        color:red;
+        font-weight: bold;
+        size: 200px;
+      }
+    </style>
+  
+  </head>
+
+  <body>
+    <header class="header"> This is a rock paper scissors game</header>
+    <p>Choose one</p>
+    <button class = button onclick="RockFunction()"> Rock</button>
+    <button class = button onclick="PaperFunction()"> Paper</button>
+    <button class = button onclick="ScissorsFunction()">Scissors</button>
+      
+      
+    <script>
+      function RockFunction() {
+        let m = Math.random()*100;
+        if(m<33){
+          alert("it's a draw")
+        }
+        else if(m>=33&&m<66){
+          alert("you lost. sorry")
+        }
+        else{
+          alert("you win this time")
+        }
+      }
+      function PaperFunction(){
+        let m = Math.random()*100;
+        if(m<33){
+          alert("you win this time")
+        }
+        else if(m>=33&&m<66){
+          alert("it's a draw")
+        }
+        else{
+          alert("you lost. sorry")
+        }
+      }
+      function ScissorsFunction(){
+        let m = Math.random()*100;
+        if(m<33){
+          alert("you lost. sorry")
+        }
+        else if(m>=33&&m<66){
+          alert("you win this time")
+        }
+        else{
+          alert("it's a draw")
+        }
+      }
+    </script>
+
+  </body>
+</html>
